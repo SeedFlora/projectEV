@@ -1,0 +1,20 @@
+# env / cache
+.venv/
+.hf_cache/
+__pycache__/
+*.pyc
+
+# data
+*.xlsx
+*.csv
+batch_predictions.csv
+
+# outputs
+outputs/
+outputs_v2/
+outputs_v3/
+outputs_v4/
+
+# HF Space artifacts
+hf_space/data.xlsx
+hf_space/results.csv

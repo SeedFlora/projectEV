@@ -1,0 +1,14 @@
+﻿torch
+torchvision
+torchaudio
+transformers==4.56.2
+datasets
+evaluate
+scikit-learn
+pandas
+openpyxl
+gradio
+accelerate
+huggingface_hub
+matplotlib
+wordcloud

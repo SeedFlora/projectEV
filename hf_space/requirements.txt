@@ -1,0 +1,7 @@
+﻿transformers==4.56.2
+torch
+pandas
+openpyxl
+gradio
+matplotlib
+wordcloud

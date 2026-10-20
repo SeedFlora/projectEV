@@ -1,0 +1,30 @@
+{
+  "EV-Norm": {
+    "all_wrong_pct": 5.065123010130246,
+    "all_right_pct": 75.39797395079594,
+    "contested_pct": 19.536903039073806,
+    "relabeled_rate_overall": 20.47756874095514,
+    "relabeled_rate_in_allwrong": 65.71428571428571,
+    "relabeled_rate_in_allright": 9.404990403071018,
+    "n_allwrong": 70,
+    "risk_ratio": 6.987172011661808,
+    "mean_words_allwrong": 24.642857142857142,
+    "mean_words_allright": 25.83493282149712,
+    "unlabeled_before_in_allwrong": 7.142857142857142,
+    "unlabeled_before_overall": 2.894356005788712
+  },
+  "EV-Raw": {
+    "all_wrong_pct": 5.426917510853835,
+    "all_right_pct": 70.33285094066571,
+    "contested_pct": 24.240231548480462,
+    "relabeled_rate_overall": 20.47756874095514,
+    "relabeled_rate_in_allwrong": 76.0,
+    "relabeled_rate_in_allright": 6.172839506172839,
+    "n_allwrong": 75,
+    "risk_ratio": 12.312000000000001,
+    "mean_words_allwrong": 24.586666666666666,
+    "mean_words_allright": 25.921810699588477,
+    "unlabeled_before_in_allwrong": 5.333333333333334,
+    "unlabeled_before_overall": 2.894356005788712
+  }
+}

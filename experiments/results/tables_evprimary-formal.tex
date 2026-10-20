@@ -1,0 +1,60 @@
+%% ---- single learners: evprimary-formal
+IndoBERT-p1 & 89.80\,$\pm$\,1.78 & 90.02\,$\pm$\,1.54 & 89.80\,$\pm$\,1.77 & 89.78\,$\pm$\,1.80 \\
+IndoBERT-1.5G & 89.58\,$\pm$\,2.18 & 89.71\,$\pm$\,2.14 & 89.58\,$\pm$\,2.18 & 89.57\,$\pm$\,2.18 \\
+IndoRoBERTa-1.5G & 88.35\,$\pm$\,1.98 & 88.43\,$\pm$\,1.97 & 88.35\,$\pm$\,1.99 & 88.35\,$\pm$\,1.99 \\
+XLM-R & 83.94\,$\pm$\,1.91 & 84.13\,$\pm$\,1.95 & 83.93\,$\pm$\,1.91 & 83.91\,$\pm$\,1.91 \\
+mBERT & 84.88\,$\pm$\,3.78 & 85.13\,$\pm$\,3.77 & 84.88\,$\pm$\,3.79 & 84.85\,$\pm$\,3.80 \\
+%% ---- fusion rules: evprimary-formal
+Best single (val-selected) & 89.44\,$\pm$\,1.85 & 89.43\,$\pm$\,1.86 & 89.43 & 1.000 \\
+Majority voting & 89.15\,$\pm$\,2.07 & 89.14\,$\pm$\,2.08 & 89.15 & 1.000 \\
+Uniform soft voting & 89.29\,$\pm$\,1.82 & 89.28\,$\pm$\,1.83 & 89.29 & 1.000 \\
+Linear-F1 weighting & 89.22\,$\pm$\,1.94 & 89.21\,$\pm$\,1.94 & 89.22 & 1.000 \\
+Softmax-F1 weighting & 90.09\,$\pm$\,1.81 & 90.08\,$\pm$\,1.81 & 90.08 & 0.913 \\
+Log-odds weighting & 89.15\,$\pm$\,1.77 & 89.14\,$\pm$\,1.78 & 89.15 & 1.000 \\
+Max-prob confidence only & 89.37\,$\pm$\,2.01 & 89.36\,$\pm$\,2.01 & 89.36 & 1.000 \\
+Entropy confidence only & 89.37\,$\pm$\,1.89 & 89.36\,$\pm$\,1.90 & 89.36 & 1.000 \\
+Linear-F1 x max-prob & 89.29\,$\pm$\,1.99 & 89.28\,$\pm$\,2.00 & 89.29 & 1.000 \\
+Linear-F1 x entropy & 89.29\,$\pm$\,1.99 & 89.28\,$\pm$\,2.00 & 89.29 & 1.000 \\
+Log-odds x max-prob & 89.29\,$\pm$\,2.10 & 89.28\,$\pm$\,2.11 & 89.29 & 1.000 \\
+RC-WSV (proposed) & 89.22\,$\pm$\,2.02 & 89.21\,$\pm$\,2.03 & 89.22 & -- \\
+%% ---- mcnemar vs proposed: evprimary-formal
+IndoBERT-p1 & 28 & 36 & -0.58 & [-1.74, +0.58] & 0.382 & 1.000 \\
+IndoBERT-1.5G & 29 & 34 & -0.36 & [-1.52, +0.72] & 0.615 & 1.000 \\
+IndoRoBERTa-1.5G & 32 & 20 & +0.87 & [-0.14, +1.88] & 0.126 & 1.000 \\
+XLM-R & 100 & 27 & +5.28 & [+3.76, +6.89] & 0.000 & 0.000 \\
+mBERT & 81 & 21 & +4.34 & [+2.97, +5.73] & 0.000 & 0.000 \\
+Best single (val-selected) & 34 & 37 & -0.21 & [-1.38, +0.94] & 0.813 & 1.000 \\
+Majority voting & 13 & 12 & +0.07 & [-0.65, +0.80] & 1.000 & 1.000 \\
+Uniform soft voting & 6 & 7 & -0.07 & [-0.58, +0.43] & 1.000 & 1.000 \\
+Linear-F1 weighting & 6 & 6 & -0.00 & [-0.51, +0.51] & 1.000 & 1.000 \\
+Softmax-F1 weighting & 12 & 24 & -0.87 & [-1.73, -0.07] & 0.065 & 0.913 \\
+Log-odds weighting & 5 & 4 & +0.07 & [-0.36, +0.51] & 1.000 & 1.000 \\
+Max-prob confidence only & 3 & 5 & -0.14 & [-0.58, +0.22] & 0.727 & 1.000 \\
+Entropy confidence only & 1 & 3 & -0.14 & [-0.43, +0.14] & 0.625 & 1.000 \\
+Linear-F1 x max-prob & 4 & 5 & -0.07 & [-0.51, +0.36] & 1.000 & 1.000 \\
+Linear-F1 x entropy & 0 & 1 & -0.07 & [-0.22, +0.00] & 1.000 & 1.000 \\
+Log-odds x max-prob & 2 & 3 & -0.07 & [-0.36, +0.22] & 1.000 & 1.000 \\
+%% ---- confidence evidence: evprimary-formal
+IndoBERT-p1 & 0.781 & 0.441 & 141 \\
+IndoBERT-1.5G & 0.807 & 0.483 & 144 \\
+IndoRoBERTa-1.5G & 0.843 & 0.521 & 161 \\
+XLM-R & 0.631 & 0.371 & 222 \\
+mBERT & 0.654 & 0.450 & 209 \\
+%% ---- cross-corpus transfer: evprimary-formal
+IndoBERT-p1 & 73.18\,$\pm$\,1.17 & 73.03\,$\pm$\,1.26 \\
+IndoBERT-1.5G & 73.08\,$\pm$\,1.26 & 72.85\,$\pm$\,1.54 \\
+IndoRoBERTa-1.5G & 71.70\,$\pm$\,0.42 & 71.64\,$\pm$\,0.40 \\
+XLM-R & 71.23\,$\pm$\,3.45 & 71.05\,$\pm$\,3.47 \\
+mBERT & 64.84\,$\pm$\,1.24 & 63.71\,$\pm$\,1.95 \\
+Best single (val-selected) & 73.16\,$\pm$\,1.34 & 72.92\,$\pm$\,1.63 \\
+Majority voting & 73.52\,$\pm$\,0.99 & 73.44\,$\pm$\,1.05 \\
+Uniform soft voting & 73.56\,$\pm$\,1.08 & 73.48\,$\pm$\,1.15 \\
+Linear-F1 weighting & 73.69\,$\pm$\,1.03 & 73.61\,$\pm$\,1.09 \\
+Softmax-F1 weighting & 73.98\,$\pm$\,0.83 & 73.89\,$\pm$\,0.88 \\
+Log-odds weighting & 73.80\,$\pm$\,0.99 & 73.72\,$\pm$\,1.04 \\
+Max-prob confidence only & 73.65\,$\pm$\,1.25 & 73.57\,$\pm$\,1.30 \\
+Entropy confidence only & 73.64\,$\pm$\,1.36 & 73.57\,$\pm$\,1.40 \\
+Linear-F1 x max-prob & 73.68\,$\pm$\,1.29 & 73.60\,$\pm$\,1.34 \\
+Linear-F1 x entropy & 73.74\,$\pm$\,1.30 & 73.66\,$\pm$\,1.33 \\
+Log-odds x max-prob & 73.74\,$\pm$\,1.24 & 73.66\,$\pm$\,1.29 \\
+RC-WSV (proposed) & 73.84\,$\pm$\,1.23 & 73.77\,$\pm$\,1.26 \\

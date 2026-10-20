@@ -1,0 +1,222 @@
+\begin{table}[!htbp]\centering\scriptsize\setlength{\tabcolsep}{2.5pt}
+\caption*{A1. Macro-F1 of all 26 rules (mean over five seeds) and pooled difference to uniform soft voting with its 95\% two-stage bootstrap interval. $^{*}$: significant after Holm correction over the 30 rules and learners of a corpus.}
+\begin{tabular}{lcccccc}\toprule
+Rule & \multicolumn{2}{c}{EV-Norm} & \multicolumn{2}{c}{EV-Public} & \multicolumn{2}{c}{EV-Raw} \\ \midrule
+Best single (val-selected) & 88.91 & $-$0.35 [$-$1.26, +0.55] & 84.25 & $-$1.25 [$-$2.02, $-$0.53]$^{*}$ & 88.05 & $-$0.19 [$-$1.18, +0.81] \\
+Majority voting & 89.12 & $-$0.15 [$-$0.58, +0.26] & 85.39 & $-$0.12 [$-$0.46, +0.24] & 87.80 & $-$0.43 [$-$0.88, $-$0.03] \\
+Uniform soft voting & 89.27 & (reference) & 85.50 & (reference) & 88.24 & (reference) \\
+Linear-F1 weighting & 89.25 & $-$0.01 [$-$0.09, +0.00] & 85.51 & +0.01 [$-$0.09, +0.08] & 88.32 & +0.09 [$-$0.01, +0.22] \\
+Softmax-F1 weighting & 89.37 & +0.10 [$-$0.56, +0.74] & 85.36 & $-$0.14 [$-$0.64, +0.33] & 88.54 & +0.30 [$-$0.27, +0.88] \\
+Log-odds weighting & 89.22 & $-$0.04 [$-$0.26, +0.16] & 85.51 & +0.01 [$-$0.16, +0.18] & 88.53 & +0.29 [$-$0.01, +0.64] \\
+Max-prob confidence & 89.25 & $-$0.01 [$-$0.29, +0.23] & 85.50 & $-$0.00 [$-$0.29, +0.27] & 88.53 & +0.29 [$-$0.01, +0.65] \\
+Entropy confidence & 89.30 & +0.03 [$-$0.48, +0.48] & 85.53 & +0.03 [$-$0.34, +0.37] & 88.56 & +0.32 [$-$0.14, +0.80] \\
+Linear-F1 $\times$ max-prob & 89.25 & $-$0.01 [$-$0.30, +0.26] & 85.52 & +0.02 [$-$0.23, +0.26] & 88.54 & +0.30 [+0.00, +0.65] \\
+Log-odds $\times$ max-prob & 89.31 & +0.04 [$-$0.28, +0.36] & 85.52 & +0.01 [$-$0.27, +0.30] & 88.57 & +0.33 [$-$0.03, +0.71] \\
+Log-odds $\times$ entropy & 89.32 & +0.06 [$-$0.38, +0.46] & 85.57 & +0.06 [$-$0.29, +0.40] & 88.70 & +0.46 [$-$0.00, +0.95] \\
+SA-WSV$_1$, binomial (submitted) & 89.32 & +0.06 [$-$0.43, +0.49] & 85.55 & +0.05 [$-$0.30, +0.38] & 88.73 & +0.49 [+0.03, +0.97] \\
+Product rule & 89.25 & $-$0.01 [$-$0.26, +0.23] & 85.56 & +0.06 [$-$0.24, +0.35] & 88.46 & +0.22 [$-$0.03, +0.52] \\
+Late-epoch accuracy weighting & 89.27 & $-$0.00 [$-$0.06, +0.06] & 85.53 & +0.02 [$-$0.06, +0.10] & 88.30 & +0.06 [$-$0.06, +0.20] \\
+Uniform + temperature scaling & 89.14 & $-$0.13 [$-$0.33, +0.07] & 85.64 & +0.13 [$-$0.10, +0.38] & 88.20 & $-$0.04 [$-$0.33, +0.25] \\
+Stacking (LR) & 89.60 & +0.33 [$-$0.61, +1.23] & 85.67 & +0.16 [$-$0.26, +0.61] & 88.64 & +0.41 [$-$0.32, +1.16] \\
+Convex log-loss weights & 89.47 & +0.20 [$-$0.63, +0.99] & 85.62 & +0.11 [$-$0.34, +0.59] & 88.67 & +0.43 [$-$0.26, +1.14] \\
+Ensemble selection & 89.50 & +0.23 [$-$0.60, +1.01] & 85.56 & +0.05 [$-$0.45, +0.57] & 88.66 & +0.42 [$-$0.29, +1.11] \\
+SA-WSV$_1$, paired bootstrap & 89.32 & +0.06 [$-$0.42, +0.51] & 85.55 & +0.05 [$-$0.29, +0.39] & 88.73 & +0.49 [+0.02, +0.97] \\
+SA-WSV$_1$, marginal bootstrap & 89.32 & +0.06 [$-$0.43, +0.49] & 85.55 & +0.05 [$-$0.30, +0.38] & 88.73 & +0.49 [+0.03, +0.97] \\
+SA-WSV$_1$, Bock & 89.32 & +0.06 [$-$0.38, +0.46] & 85.57 & +0.06 [$-$0.28, +0.40] & 88.72 & +0.48 [+0.01, +0.97] \\
+SA-WSV$_1$, empirical Bayes & 89.31 & +0.04 [$-$0.46, +0.49] & 85.52 & +0.02 [$-$0.34, +0.37] & 88.69 & +0.45 [+0.00, +0.92] \\
+SA-WSV$_1$, bagged weights & 89.34 & +0.07 [$-$0.36, +0.48] & 85.56 & +0.06 [$-$0.29, +0.40] & 88.70 & +0.46 [$-$0.00, +0.95] \\
+SA-WSV$_1$ + temperature scaling & 89.16 & $-$0.10 [$-$0.48, +0.26] & 85.58 & +0.07 [$-$0.31, +0.46] & 88.49 & +0.25 [$-$0.25, +0.74] \\
+SA-WSV$_1$, percentile confidence & 88.92 & $-$0.35 [$-$0.79, +0.05] & 85.50 & +0.00 [$-$0.41, +0.43] & 88.01 & $-$0.23 [$-$0.86, +0.36] \\
+SA-WSV$_0$ (no confidence term) & 89.27 & $-$0.00 [$-$0.20, +0.19] & 85.53 & +0.02 [$-$0.13, +0.17] & 88.43 & +0.19 [$-$0.10, +0.49] \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\caption*{A1a. Pre-designated comparisons (pooled macro-F1 points, two-stage bootstrap, Holm over the three corpora; last entry: seeds with a positive difference).}
+\begin{tabular}{>{\raggedright}p{2.3cm}>{\raggedright}p{4.25cm}>{\raggedright}p{4.25cm}>{\raggedright\arraybackslash}p{4.25cm}}\toprule
+Comparison & EV-Norm & EV-Public & EV-Raw \\ \midrule
+SA-WSV$_1$ vs uniform (primary) & +0.06 [$-$0.42, +0.51], $p$=0.792, $p_\mathrm{Holm}$=1.000, 3/5 & +0.05 [$-$0.29, +0.39], $p$=0.792, $p_\mathrm{Holm}$=1.000, 2/5 & +0.49 [+0.02, +0.97], $p$=0.040, $p_\mathrm{Holm}$=0.120, 5/5 \\
+SA-WSV$_0$ vs uniform (secondary) & $-$0.00 [$-$0.20, +0.19], $p$=0.998, $p_\mathrm{Holm}$=1.000, 3/5 & +0.02 [$-$0.13, +0.17], $p$=0.722, $p_\mathrm{Holm}$=1.000, 3/5 & +0.19 [$-$0.10, +0.49], $p$=0.187, $p_\mathrm{Holm}$=0.562, 3/5 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\caption*{A1b. Multi-seed pools (descriptive): uniform macro-F1 of the pool and other rules' difference to it. Seed-averaged: each learner's posteriors averaged over the five seeds (5 members); all-runs: 25 members. Q of the all-runs pool: 0.940 / 0.896 / 0.924.}
+\begin{tabular}{llccc}\toprule
+Pool & Rule & EV-Norm & EV-Public & EV-Raw \\ \midrule
+seed-averaged & Uniform soft voting & 89.50 & 85.83 & 88.20 \\
+seed-averaged & Linear-F1 weighting & +0.00 & +0.09 & $-$0.00 \\
+seed-averaged & Log-odds $\times$ entropy & $-$0.22 & +0.42 & +0.80 \\
+seed-averaged & SA-WSV$_1$, binomial (submitted) & $-$0.22 & +0.34 & +0.72 \\
+seed-averaged & SA-WSV$_1$, paired bootstrap & $-$0.15 & +0.40 & +0.72 \\
+seed-averaged & Stacking (LR) & +0.36 & +0.71 & +0.79 \\
+seed-averaged & Convex log-loss weights & +0.58 & +0.17 & +0.80 \\
+seed-averaged & Ensemble selection & +0.58 & +0.23 & +0.87 \\
+seed-averaged & Best single (val-selected) & +0.66 & $-$0.85 & +0.22 \\
+all-runs & Uniform soft voting & 89.50 & 85.83 & 88.20 \\
+all-runs & Linear-F1 weighting & +0.00 & +0.03 & $-$0.07 \\
+all-runs & Log-odds $\times$ entropy & $-$0.15 & +0.31 & +0.79 \\
+all-runs & SA-WSV$_1$, binomial (submitted) & $-$0.22 & +0.28 & +0.72 \\
+all-runs & SA-WSV$_1$, paired bootstrap & $-$0.15 & +0.19 & +0.72 \\
+all-runs & Stacking (LR) & +0.58 & +0.12 & +0.72 \\
+all-runs & Convex log-loss weights & +0.28 & $-$0.01 & +0.72 \\
+all-runs & Ensemble selection & +0.50 & $-$0.10 & +0.58 \\
+all-runs & Best single (val-selected) & +0.79 & $-$1.65 & +0.35 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize\setlength{\tabcolsep}{2.5pt}
+\caption*{A2. Risk over 900 small-validation deployments (20, 40, 80 items; 20 draws per fold, five seeds, three corpora). Differences to uniform soft voting in points: mean with the full split, mean and CVaR$_5$ (cluster-bootstrap 95\% interval) over the deployments, \% losing over 0.5 and 1.0 points, and CVaR$_5$ of the validation-size regret (rule on the subset minus the same rule on the full split) at 20, 40 and 80 items.}
+\begin{tabular}{lcccccccc}\toprule
+Rule & Full & Mean & CVaR$_5$ & $>$0.5 & $>$1.0 & R$_{20}$ & R$_{40}$ & R$_{80}$ \\ \midrule
+Best single (val-selected) & $-$0.60 & $-$1.08 & $-$3.44 [$-$3.63, $-$3.20] & 68.6 & 52.9 & $-$3.21 & $-$2.87 & $-$2.54 \\
+Majority voting & $-$0.23 & $-$0.23 & $-$0.87 [$-$0.87, $-$0.51] & 20.0 & 0.0 & +0.00 & +0.00 & +0.00 \\
+Uniform soft voting & +0.00 & +0.00 & +0.00 [+0.00, +0.00] & 0.0 & 0.0 & +0.00 & +0.00 & +0.00 \\
+Linear-F1 weighting & +0.03 & +0.02 & $-$0.14 [$-$0.17, $-$0.11] & 0.0 & 0.0 & $-$0.25 & $-$0.20 & $-$0.14 \\
+Softmax-F1 weighting & +0.09 & $-$0.28 & $-$1.79 [$-$2.00, $-$1.53] & 31.6 & 13.7 & $-$2.25 & $-$2.08 & $-$1.65 \\
+Log-odds weighting & +0.08 & +0.05 & $-$0.52 [$-$0.58, $-$0.45] & 2.0 & 0.2 & $-$0.87 & $-$0.51 & $-$0.26 \\
+Max-prob confidence & +0.09 & +0.09 & $-$0.36 [$-$0.36, +0.00] & 0.0 & 0.0 & +0.00 & +0.00 & +0.00 \\
+Entropy confidence & +0.12 & +0.12 & $-$0.73 [$-$0.73, $-$0.14] & 6.7 & 0.0 & +0.00 & +0.00 & +0.00 \\
+Linear-F1 $\times$ max-prob & +0.10 & +0.11 & $-$0.38 [$-$0.42, $-$0.11] & 0.2 & 0.0 & $-$0.18 & $-$0.15 & $-$0.09 \\
+Log-odds $\times$ max-prob & +0.13 & +0.10 & $-$0.53 [$-$0.59, $-$0.39] & 2.3 & 0.1 & $-$0.71 & $-$0.32 & $-$0.17 \\
+Log-odds $\times$ entropy & +0.19 & +0.15 & $-$0.57 [$-$0.69, $-$0.36] & 3.7 & 0.0 & $-$0.63 & $-$0.34 & $-$0.17 \\
+SA-WSV$_1$, binomial (submitted) & +0.20 & +0.16 & $-$0.69 [$-$0.77, $-$0.20] & 6.6 & 0.0 & $-$0.42 & $-$0.30 & $-$0.16 \\
+Product rule & +0.09 & +0.09 & $-$0.22 [$-$0.22, $-$0.14] & 0.0 & 0.0 & +0.00 & +0.00 & +0.00 \\
+Uniform + temperature scaling & $-$0.01 & $-$0.04 & $-$0.44 [$-$0.48, $-$0.36] & 1.3 & 0.0 & $-$0.49 & $-$0.32 & $-$0.23 \\
+Stacking (LR) & +0.30 & $-$0.20 & $-$2.57 [$-$3.03, $-$2.19] & 30.1 & 15.2 & $-$3.58 & $-$2.37 & $-$1.14 \\
+Convex log-loss weights & +0.25 & $-$0.38 & $-$2.26 [$-$2.41, $-$1.97] & 44.0 & 20.7 & $-$2.90 & $-$2.23 & $-$1.33 \\
+Ensemble selection & +0.23 & $-$0.38 & $-$2.25 [$-$2.40, $-$1.95] & 43.0 & 20.9 & $-$2.84 & $-$2.15 & $-$1.23 \\
+SA-WSV$_1$, paired bootstrap & +0.20 & +0.17 & $-$0.62 [$-$0.71, $-$0.23] & 5.4 & 0.0 & $-$0.43 & $-$0.30 & $-$0.19 \\
+SA-WSV$_1$, marginal bootstrap & +0.20 & +0.16 & $-$0.69 [$-$0.77, $-$0.20] & 6.7 & 0.0 & $-$0.43 & $-$0.31 & $-$0.15 \\
+SA-WSV$_1$, Bock & +0.20 & +0.16 & $-$0.56 [$-$0.69, $-$0.34] & 3.4 & 0.0 & $-$0.60 & $-$0.32 & $-$0.17 \\
+SA-WSV$_1$, empirical Bayes & +0.17 & +0.14 & $-$0.73 [$-$0.77, $-$0.23] & 7.0 & 0.0 & $-$0.55 & $-$0.39 & $-$0.18 \\
+SA-WSV$_1$, bagged weights & +0.20 & +0.15 & $-$0.55 [$-$0.66, $-$0.35] & 3.3 & 0.0 & $-$0.64 & $-$0.38 & $-$0.17 \\
+SA-WSV$_1$ + temperature scaling & +0.07 & $-$0.06 & $-$0.87 [$-$0.95, $-$0.76] & 12.9 & 0.9 & $-$1.18 & $-$0.71 & $-$0.37 \\
+SA-WSV$_1$, percentile confidence & $-$0.19 & $-$0.24 & $-$0.98 [$-$1.09, $-$0.67] & 22.4 & 2.0 & $-$0.58 & $-$0.53 & $-$0.36 \\
+SA-WSV$_0$ (no confidence term) & +0.07 & +0.05 & $-$0.25 [$-$0.27, $-$0.22] & 0.0 & 0.0 & $-$0.44 & $-$0.39 & $-$0.20 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\caption*{A2a. Shrinkage families over the deployments: paired mean difference and CVaR$_5$ gain (positive = lighter tail) of each shrunk rule against its unshrunk counterpart and its $\lambda=0$ limit, with cluster-bootstrap intervals.}
+\begin{tabular}{llcc}\toprule
+Shrunk rule & Compared with & Mean difference & CVaR$_5$ gain \\ \midrule
+SA-WSV$_0$ (no confidence term) & Log-odds weighting & +0.01 [$-$0.02, +0.03] & +0.26 [+0.21, +0.33] \\
+SA-WSV$_0$ (no confidence term) & Uniform soft voting & +0.05 [+0.02, +0.09] & $-$0.25 [$-$0.27, $-$0.22] \\
+SA-WSV$_1$, paired bootstrap & Log-odds $\times$ entropy & +0.02 [$-$0.01, +0.04] & $-$0.05 [$-$0.08, +0.16] \\
+SA-WSV$_1$, paired bootstrap & Entropy confidence & +0.04 [+0.00, +0.09] & +0.10 [$-$0.09, +0.11] \\
+SA-WSV$_1$, binomial (submitted) & Log-odds $\times$ entropy & +0.01 [$-$0.02, +0.05] & $-$0.11 [$-$0.15, +0.20] \\
+SA-WSV$_1$, binomial (submitted) & Entropy confidence & +0.04 [+0.01, +0.08] & +0.04 [$-$0.07, +0.04] \\
+SA-WSV$_1$, empirical Bayes & Log-odds $\times$ entropy & $-$0.01 [$-$0.05, +0.04] & $-$0.15 [$-$0.18, +0.17] \\
+SA-WSV$_1$, empirical Bayes & Entropy confidence & +0.02 [$-$0.00, +0.04] & $-$0.00 [$-$0.13, +0.01] \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\caption*{A3. Shrinkage estimators: mean shrinkage factor per corpus (EV-Norm, EV-Public, EV-Raw) and held-out error of the centred reliability vector relative to the raw validation estimates (below 1 = closer to the test-fold reliabilities).}
+\begin{tabular}{lcccccc}\toprule
+Estimator & $\bar\lambda$ N & $\bar\lambda$ P & $\bar\lambda$ R & risk N & risk P & risk R \\ \midrule
+binomial (submitted) & 0.34 & 0.65 & 0.45 & 0.91 & 1.04 & 0.95 \\
+marginal bootstrap & 0.34 & 0.64 & 0.45 & 0.91 & 1.04 & 0.96 \\
+paired bootstrap (revised) & 0.67 & 0.83 & 0.66 & 0.89 & 0.95 & 0.93 \\
+Bock (factor) & 0.93 & 0.94 & 0.95 & 0.98 & 0.97 & 0.98 \\
+empirical Bayes (mean $B_m$) & 0.10 & 0.28 & 0.20 & 0.96 & 1.60 & 1.13 \\
+equal reliabilities ($\lambda=0$) & -- & -- & -- & 1.05 & 2.33 & 1.52 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\caption*{A3a. Sampling variance of validation macro-F1 (R2.1): bootstrap/binomial and delta/binomial variance ratios per learner; paired noise of the centred vector relative to the independence value and the correlation of learners' bootstrap replicates; held-out check (observed/predicted validation--test discrepancy, 95\% interval) under the binomial-independent and the paired-bootstrap noise models.}
+\begin{tabular}{lcccccc}\toprule
+Corpus & boot/binom & delta/binom & paired/indep. & corr. & held-out binom. & held-out paired \\ \midrule
+EV-Norm & 1.018 & 1.001 & 0.445 & 0.56 & 0.59 [0.43, 0.77] & 1.32 [0.95, 1.70] \\
+EV-Public & 1.024 & 1.012 & 0.490 & 0.52 & 0.48 [0.22, 0.75] & 0.95 [0.46, 1.46] \\
+EV-Raw & 1.020 & 1.001 & 0.458 & 0.55 & 0.66 [0.46, 0.88] & 1.43 [0.96, 1.96] \\
+pooled & 1.021 & 1.005 & 0.459 & 0.55 & 0.60 [0.48, 0.72] & 1.29 [1.02, 1.55] \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize\setlength{\tabcolsep}{2.5pt}
+\caption*{A4. Calibration per learner and corpus: validation-fitted temperature, pooled test ECE before/after temperature scaling, and AUROC of the entropy confidence for the learner's own correctness (unchanged by temperature scaling).}
+\begin{tabular}{lccccccccc}\toprule
+Learner & \multicolumn{3}{c}{EV-Norm} & \multicolumn{3}{c}{EV-Public} & \multicolumn{3}{c}{EV-Raw} \\ \midrule
+IndoBERT-p1 & 1.38 & 0.053/0.023 & 0.836 & 2.00 & 0.095/0.032 & 0.788 & 1.48 & 0.062/0.034 & 0.834 \\
+IndoBERT-1.5G & 1.39 & 0.056/0.023 & 0.824 & 1.82 & 0.086/0.027 & 0.787 & 1.32 & 0.051/0.026 & 0.795 \\
+IndoRoBERTa-1.5G & 1.58 & 0.062/0.034 & 0.833 & 1.81 & 0.087/0.031 & 0.784 & 1.37 & 0.049/0.021 & 0.803 \\
+XLM-R & 1.17 & 0.050/0.028 & 0.761 & 1.37 & 0.067/0.025 & 0.741 & 1.20 & 0.050/0.025 & 0.745 \\
+mBERT & 1.32 & 0.058/0.022 & 0.742 & 1.50 & 0.080/0.028 & 0.736 & 1.15 & 0.047/0.030 & 0.733 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize\setlength{\tabcolsep}{2.5pt}
+\caption*{A4a. Fused posteriors: macro-F1, pooled ECE and log-loss of the ensemble posterior (mean over seeds).}
+\begin{tabular}{lccccccccc}\toprule
+Rule & \multicolumn{3}{c}{EV-Norm} & \multicolumn{3}{c}{EV-Public} & \multicolumn{3}{c}{EV-Raw} \\ \midrule
+Uniform soft voting & 89.27 & 0.017 & 0.270 & 85.50 & 0.020 & 0.349 & 88.24 & 0.019 & 0.299 \\
+Uniform + temperature scaling & 89.14 & 0.038 & 0.276 & 85.64 & 0.041 & 0.351 & 88.20 & 0.041 & 0.305 \\
+Entropy confidence & 89.30 & 0.042 & 0.287 & 85.53 & 0.058 & 0.377 & 88.56 & 0.038 & 0.307 \\
+SA-WSV$_1$, paired bootstrap & 89.32 & 0.043 & 0.286 & 85.55 & 0.060 & 0.378 & 88.73 & 0.039 & 0.306 \\
+SA-WSV$_1$ + temperature scaling & 89.16 & 0.042 & 0.280 & 85.58 & 0.032 & 0.351 & 88.49 & 0.036 & 0.304 \\
+SA-WSV$_1$, percentile confidence & 88.92 & 0.042 & 0.290 & 85.50 & 0.053 & 0.370 & 88.01 & 0.037 & 0.311 \\
+SA-WSV$_0$ (no confidence term) & 89.27 & 0.018 & 0.268 & 85.53 & 0.020 & 0.348 & 88.43 & 0.020 & 0.295 \\
+SA-WSV$_1$, binomial (submitted) & 89.32 & 0.042 & 0.286 & 85.55 & 0.059 & 0.377 & 88.73 & 0.040 & 0.306 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\caption*{A4b. Reliability-transform ablation (R2.2): reliability statistic $\times$ transform $\times$ shrinkage, with ($\gamma=1$) and without ($\gamma=0$) the entropy confidence; macro-F1 and difference to uniform voting.}
+\begin{tabular}{lccc}\toprule
+Variant & EV-Norm & EV-Public & EV-Raw \\ \midrule
+$\gamma$=0 F1 log-odds, raw & 89.22 ($-$0.04) & 85.51 (+0.01) & 88.53 (+0.29) \\
+$\gamma$=0 F1 log-odds, shrunk & 89.27 (+0.00) & 85.53 (+0.02) & 88.43 (+0.19) \\
+$\gamma$=0 F1 linear, raw & 89.25 ($-$0.01) & 85.51 (+0.01) & 88.32 (+0.09) \\
+$\gamma$=0 F1 linear, shrunk & 89.27 (+0.00) & 85.50 (+0.00) & 88.30 (+0.06) \\
+$\gamma$=0 accuracy log-odds, raw & 89.22 ($-$0.04) & 85.51 (+0.01) & 88.51 (+0.27) \\
+$\gamma$=0 accuracy log-odds, shrunk & 89.27 (+0.00) & 85.51 (+0.01) & 88.43 (+0.19) \\
+$\gamma$=0 accuracy linear, raw & 89.25 ($-$0.01) & 85.50 (+0.00) & 88.32 (+0.09) \\
+$\gamma$=0 accuracy linear, shrunk & 89.27 (+0.00) & 85.50 (+0.00) & 88.30 (+0.06) \\
+$\gamma$=1 F1 log-odds, raw & 89.32 (+0.06) & 85.57 (+0.06) & 88.70 (+0.46) \\
+$\gamma$=1 F1 log-odds, shrunk & 89.32 (+0.06) & 85.55 (+0.05) & 88.73 (+0.49) \\
+$\gamma$=1 F1 linear, raw & 89.32 (+0.06) & 85.52 (+0.02) & 88.59 (+0.35) \\
+$\gamma$=1 F1 linear, shrunk & 89.31 (+0.04) & 85.53 (+0.03) & 88.56 (+0.32) \\
+$\gamma$=1 accuracy log-odds, raw & 89.32 (+0.06) & 85.57 (+0.06) & 88.70 (+0.46) \\
+$\gamma$=1 accuracy log-odds, shrunk & 89.32 (+0.06) & 85.55 (+0.05) & 88.73 (+0.49) \\
+$\gamma$=1 accuracy linear, raw & 89.32 (+0.06) & 85.53 (+0.03) & 88.57 (+0.33) \\
+$\gamma$=1 accuracy linear, shrunk & 89.31 (+0.04) & 85.54 (+0.04) & 88.56 (+0.32) \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize\setlength{\tabcolsep}{2pt}
+\caption*{A5. Zero-shot transfer per direction (seeds 1--4 $\times$ 5 folds): uniform macro-F1 on the target and its drop from in domain; recall drop negative/positive; Spearman correlation of the learner order; difference to uniform for SA-WSV$_0$, SA-WSV$_1$ and stacking; gain of oracle convex weights fitted on target labels; word-type Jaccard overlap and target-token OOV rate (\%).}
+\begin{tabular}{lcccccccccc}\toprule
+Direction & F1 & drop & rec. drop & $\rho_S$ & SA$_0$ & SA$_1$ & stack & oracle & Jacc. & OOV \\ \midrule
+EV-Norm$\to$EV-Public & 74.5 & 14.8 & 12.4/16.5 & 0.9 & +0.18 & +0.11 & +0.51 & 1.20 & 14.1 & 36.5 \\
+EV-Norm$\to$EV-Twitter & 80.8 & 8.5 & 0.1/13.6 & 1.0 & +0.12 & +0.04 & +0.75 & 1.85 & 18.9 & 36.4 \\
+EV-Norm$\to$EV-YouTube & 60.4 & 28.8 & 16.0/41.5 & 0.4 & $-$0.06 & $-$0.11 & $-$0.79 & 0.68 & 17.0 & 35.9 \\
+EV-Public$\to$EV-Norm & 76.9 & 8.5 & 13.0/3.8 & 0.1 & +0.13 & $-$0.22 & +0.13 & 0.65 & 14.1 & 14.3 \\
+EV-Public$\to$EV-Raw & 72.7 & 12.8 & 5.3/20.0 & 1.0 & +0.29 & +0.63 & +1.18 & 1.95 & 15.0 & 14.5 \\
+EV-Public$\to$EV-Twitter & 88.1 & -2.6 & -12.2/3.9 & 0.9 & +0.12 & +0.24 & $-$0.07 & 1.33 & 26.7 & 10.9 \\
+EV-Public$\to$EV-YouTube & 54.5 & 30.9 & -1.6/61.0 & 0.3 & $-$0.06 & $-$0.16 & $-$0.76 & 0.40 & 16.6 & 10.9 \\
+EV-Raw$\to$EV-Public & 74.9 & 13.4 & 8.6/17.5 & 0.7 & +0.20 & +0.11 & +0.35 & 0.81 & 15.0 & 30.6 \\
+EV-Raw$\to$EV-Twitter & 78.7 & 9.6 & -2.2/17.3 & 0.7 & +0.11 & $-$0.21 & +0.92 & 2.65 & 20.4 & 26.4 \\
+EV-Raw$\to$EV-YouTube & 59.8 & 28.5 & 15.7/41.3 & 0.1 & $-$0.33 & $-$0.21 & $-$0.81 & 0.36 & 17.7 & 31.2 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\caption*{A6. Annotation reliability and error concentration on the primary corpus (revision rates on the 1,342 posts labelled in both passes).}
+\begin{tabular}{lp{11.2cm}}\toprule
+Quantity & Value \\ \midrule
+Inter-pass agreement & 78.9\% of 1342 posts; $\kappa$ = 0.578 [0.536, 0.619] (= PABAK, $p_e$=0.5) \\
+Revised posts & 283 (21.1\% of labelled); 141 negative$\to$positive, 142 positive$\to$negative \\
+EV-Norm: risk ratio per seed (K=5) & 7.3 [5.7, 9.4], 8.3 [6.7, 10.4], 8.5 [6.7, 10.7], 7.8 [6.1, 9.9], 6.4 [5.0, 8.1] \\
+EV-Norm: pooled K=25 & RR 14.5 [10.7, 19.6]; all-wrong 24 posts, 87.5\% revised \\
+EV-Norm: ensemble accuracy & revised 67.5\%, unrevised 95.8\%; agrees with first annotator on revised 32.5\% \\
+EV-Norm: AUROC for revision & ambiguity 0.859, entropy 0.830, share wrong 0.827 \\
+EV-Norm: confident learning & 53 flagged (3.8\%), 79.2\% revised vs 18.9\%; recall 13.4\%; residual issue rate 4.8\% \\
+EV-Raw: risk ratio per seed (K=5) & 12.7 [9.7, 16.6], 10.7 [8.4, 13.6], 11.3 [8.7, 14.6], 9.5 [7.3, 12.5], 10.5 [8.0, 13.7] \\
+EV-Raw: pooled K=25 & RR 23.1 [15.8, 33.8]; all-wrong 32 posts, 84.4\% revised \\
+EV-Raw: ensemble accuracy & revised 61.1\%, unrevised 95.5\%; agrees with first annotator on revised 38.9\% \\
+EV-Raw: AUROC for revision & ambiguity 0.888, entropy 0.840, share wrong 0.870 \\
+EV-Raw: confident learning & 53 flagged (3.8\%), 84.0\% revised vs 18.7\%; recall 14.8\%; residual issue rate 5.1\% \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\caption*{A7. Computational cost on one RTX 3070 Ti Laptop GPU (bf16): parameters (M), peak training memory (GB), median fine-tuning time per fold (s; EV-Norm / EV-Public / EV-Raw) and test inference (ms per post). All 375 runs: 3.36 GPU-hours from medians, 4.88 h end to end. Fusion on one CPU core: fitting SA-WSV$_1$ 14.2 ms per fold (binomial version 0.05 ms), applying it 0.28 $\mu$s per post.}
+\begin{tabular}{lcccc}\toprule
+Learner & Params & Memory & Train (s) & Infer (ms) \\ \midrule
+IndoBERT-p1 & 124.4 & 2.41 & 19 / 47 / 20 & 1.03 \\
+IndoBERT-1.5G & 110.6 & 2.26 & 18 / 46 / 19 & 1.04 \\
+IndoRoBERTa-1.5G & 126.0 & 2.44 & 19 / 49 / 20 & 1.03 \\
+XLM-R & 278.0 & 5.27 & 27 / 65 / 27 & 1.03 \\
+mBERT & 177.9 & 3.40 & 21 / 56 / 22 & 1.05 \\
+\bottomrule\end{tabular}\end{table}

@@ -1,3 +1,7 @@
+## ICDEES 2026 revised-paper artifacts
+
+The reproducibility materials for **Shrinkage-Adaptive Weighted Soft Voting for Ensembles of Indonesian Pre-Trained Language Models in Electric Vehicle Sentiment Classification** are now included: numerical labels from both labelling passes, experiment code, five-seed stored posteriors/fold indices, and aggregate results (primary text/worksheets are withheld pending privacy and redistribution review). See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for provenance, external-corpus source links and reproduction commands. The legacy prototype and single-split table below are retained as project history; they are not the revised paper's multi-seed benchmark table.
+
 # projectEV - Analisis Sentimen EV untuk Insight Bisnis
 
 ## Ringkas

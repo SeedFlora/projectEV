@@ -18,3 +18,11 @@ outputs_v4/
 # HF Space artifacts
 hf_space/data.xlsx
 hf_space/results.csv
+
+# Explicitly published research dataset; all other spreadsheets remain ignored
+!hf_space/data.xlsx
+# LaTeX build intermediates
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.synctex.gz

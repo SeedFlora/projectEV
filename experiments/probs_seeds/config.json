@@ -1,0 +1,24 @@
+{
+  "seeds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "datasets": [
+    "evprimary-formal",
+    "evpublic",
+    "evprimary-informal"
+  ],
+  "out": "experiments/probs_seeds",
+  "ref": "experiments/probs",
+  "folds": 5,
+  "epochs": 3,
+  "bs": 16,
+  "lr": 2e-05,
+  "wd": 0.01,
+  "warmup": 0.1,
+  "max_len": 128,
+  "time_budget": 1000000000.0,
+  "split_seed": 42
+}

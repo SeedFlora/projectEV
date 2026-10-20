@@ -1,0 +1,454 @@
+{
+  "reliability": {
+    "n_both": 1342,
+    "n_first_missing": 40,
+    "agreement": 0.7891207153502235,
+    "kappa": 0.5782414307004471,
+    "kappa_ci95": [
+      0.535766475391355,
+      0.6194645212846257
+    ],
+    "pe": 0.5,
+    "pabak": 0.5782414307004471,
+    "kappa_equals_pabak_because_pe_is_0.5": true,
+    "transition": {
+      "first 0 -> final 0": 529,
+      "first 0 -> final 1": 141,
+      "first 1 -> final 0": 142,
+      "first 1 -> final 1": 530
+    },
+    "revised_total": 283,
+    "revised_share_labelled": 0.21087928464977646,
+    "revised_share_all_posts_as_submitted": 0.20477568740955138,
+    "neg_to_pos": 141,
+    "pos_to_neg": 142,
+    "flip_rate_first_neg": 0.21044776119402986,
+    "flip_rate_first_pos": 0.2113095238095238,
+    "n_first_neg": 670,
+    "n_first_pos": 672,
+    "note": "agreement between first-pass and non-blind adjudicated labels; likely an upper bound on independent agreement"
+  },
+  "seeds_common": [
+    42,
+    1,
+    2,
+    3,
+    4
+  ],
+  "corpora": {
+    "EV-Norm": {
+      "seeds": [
+        42,
+        1,
+        2,
+        3,
+        4
+      ],
+      "K_pooled": 25,
+      "groups_pooled": {
+        "all_wrong": {
+          "n": 24,
+          "share_of_labelled": 0.01788375558867362,
+          "revised_rate": 0.875,
+          "mean_words": 22.428571428571427
+        },
+        "contested": {
+          "n": 440,
+          "share_of_labelled": 0.32786885245901637,
+          "revised_rate": 0.475,
+          "mean_words": 24.708333333333332
+        },
+        "all_correct": {
+          "n": 878,
+          "share_of_labelled": 0.65424739195231,
+          "revised_rate": 0.06036446469248292,
+          "mean_words": 25.729398663697104
+        }
+      },
+      "rr_pooled": {
+        "K": 25,
+        "n_allwrong": 24,
+        "n_allcorrect": 878,
+        "rev_allwrong": 0.875,
+        "rev_allcorrect": 0.06036446469248292,
+        "rr": 14.495283018867925,
+        "rr_ci95_katz": [
+          10.720993696713107,
+          19.598298044098126
+        ]
+      },
+      "rr_per_seed_K5": {
+        "42": {
+          "K": 5,
+          "n_allwrong": 65,
+          "n_allcorrect": 1015,
+          "rev_allwrong": 0.7076923076923077,
+          "rev_allcorrect": 0.09655172413793103,
+          "rr": 7.32967032967033,
+          "rr_ci95_katz": [
+            5.739290602074734,
+            9.360750459687216
+          ]
+        },
+        "1": {
+          "K": 5,
+          "n_allwrong": 53,
+          "n_allcorrect": 1022,
+          "rev_allwrong": 0.8301886792452831,
+          "rev_allcorrect": 0.09980430528375733,
+          "rr": 8.318165001849797,
+          "rr_ci95_katz": [
+            6.670488855390116,
+            10.372833310723255
+          ]
+        },
+        "2": {
+          "K": 5,
+          "n_allwrong": 59,
+          "n_allcorrect": 1008,
+          "rev_allwrong": 0.7796610169491526,
+          "rev_allcorrect": 0.09226190476190477,
+          "rr": 8.450519409513396,
+          "rr_ci95_katz": [
+            6.671209555445456,
+            10.704397410552378
+          ]
+        },
+        "3": {
+          "K": 5,
+          "n_allwrong": 51,
+          "n_allcorrect": 1020,
+          "rev_allwrong": 0.7647058823529411,
+          "rev_allcorrect": 0.09803921568627451,
+          "rr": 7.8,
+          "rr_ci95_katz": [
+            6.132801738707759,
+            9.920425050756586
+          ]
+        },
+        "4": {
+          "K": 5,
+          "n_allwrong": 63,
+          "n_allcorrect": 1022,
+          "rev_allwrong": 0.6984126984126984,
+          "rev_allcorrect": 0.1095890410958904,
+          "rr": 6.373015873015873,
+          "rr_ci95_katz": [
+            5.020820863037935,
+            8.089380686077147
+          ]
+        }
+      },
+      "rr_per_seed_K5_summary": {
+        "mean": 7.654274122809879,
+        "min": 6.373015873015873,
+        "max": 8.450519409513396
+      },
+      "seed42_replication": {
+        "all_posts_as_submitted": {
+          "K": 5,
+          "n_allwrong": 70,
+          "n_allcorrect": 1042,
+          "rev_allwrong": 0.6571428571428571,
+          "rev_allcorrect": 0.09404990403071017,
+          "rr": 6.987172011661808,
+          "rr_ci95_katz": [
+            5.423843650646637,
+            9.001102514216033
+          ]
+        },
+        "labelled_posts": {
+          "K": 5,
+          "n_allwrong": 65,
+          "n_allcorrect": 1015,
+          "rev_allwrong": 0.7076923076923077,
+          "rev_allcorrect": 0.09655172413793103,
+          "rr": 7.32967032967033,
+          "rr_ci95_katz": [
+            5.739290602074734,
+            9.360750459687216
+          ]
+        }
+      },
+      "ensemble_accuracy": {
+        "revised": 0.6749116607773852,
+        "unrevised_labelled": 0.9575070821529745,
+        "first_pass_missing": 0.8,
+        "all": 0.8950795947901592
+      },
+      "auroc_revision": {
+        "ambiguity_1_minus_p_final": {
+          "auroc": 0.8585137655698922,
+          "ci95": [
+            0.8339829629382614,
+            0.8803517725024324
+          ]
+        },
+        "ensemble_entropy": {
+          "auroc": 0.8300950626799735,
+          "ci95": [
+            0.8045444308109254,
+            0.8538517803545047
+          ],
+          "diff_ambiguity_1_minus_p_final_minus_this": {
+            "diff": 0.028418702889918768,
+            "ci95": [
+              0.015075480808701297,
+              0.04191644896215792
+            ]
+          }
+        },
+        "share_wrong_k_over_K": {
+          "auroc": 0.8269785817008511,
+          "ci95": [
+            0.7986491601237042,
+            0.8538649307978537
+          ],
+          "diff_ambiguity_1_minus_p_final_minus_this": {
+            "diff": 0.031535183869041084,
+            "ci95": [
+              0.018236885849269992,
+              0.04607587238195893
+            ]
+          }
+        },
+        "n_items": 1342,
+        "n_revised": 283,
+        "note": "CIs resample posts and condition on the trained ensemble; the ambiguity score uses the adjudicated label"
+      },
+      "confident_learning": {
+        "thresholds": [
+          0.8427385869516294,
+          0.8413816773793868
+        ],
+        "n_flagged": 53,
+        "flag_rate": 0.03835021707670044,
+        "n_flagged_labelled": 48,
+        "revised_rate_flagged": 0.7916666666666666,
+        "revised_rate_unflagged": 0.1893353941267388,
+        "precision_for_revised": 0.7916666666666666,
+        "recall_of_revised": 0.13427561837455831,
+        "estimated_label_issue_rate": 0.04842019983796914,
+        "note": "the issue rate estimates residual noise in the final labels, not the revision rate"
+      },
+      "side_taking_revised": {
+        "n_revised": 283,
+        "agrees_with_first_pass": 0.3250883392226148,
+        "per_seed_first_pass": [
+          0.3321554770318021,
+          0.33568904593639576,
+          0.3250883392226148,
+          0.31095406360424027,
+          0.30742049469964666
+        ]
+      }
+    },
+    "EV-Raw": {
+      "seeds": [
+        42,
+        1,
+        2,
+        3,
+        4
+      ],
+      "K_pooled": 25,
+      "groups_pooled": {
+        "all_wrong": {
+          "n": 32,
+          "share_of_labelled": 0.02384500745156483,
+          "revised_rate": 0.84375,
+          "mean_words": 24.848484848484848
+        },
+        "contested": {
+          "n": 489,
+          "share_of_labelled": 0.36438152011922503,
+          "revised_rate": 0.4621676891615542,
+          "mean_words": 24.767441860465116
+        },
+        "all_correct": {
+          "n": 821,
+          "share_of_labelled": 0.6117734724292101,
+          "revised_rate": 0.03654080389768575,
+          "mean_words": 26.264105642256904
+        }
+      },
+      "rr_pooled": {
+        "K": 25,
+        "n_allwrong": 32,
+        "n_allcorrect": 821,
+        "rev_allwrong": 0.84375,
+        "rev_allcorrect": 0.03654080389768575,
+        "rr": 23.090625,
+        "rr_ci95_katz": [
+          15.765809128927934,
+          33.81856005806412
+        ]
+      },
+      "rr_per_seed_K5": {
+        "42": {
+          "K": 5,
+          "n_allwrong": 71,
+          "n_allcorrect": 949,
+          "rev_allwrong": 0.8028169014084507,
+          "rev_allcorrect": 0.06322444678609063,
+          "rr": 12.697887323943661,
+          "rr_ci95_katz": [
+            9.686710391522231,
+            16.645108192011445
+          ]
+        },
+        "1": {
+          "K": 5,
+          "n_allwrong": 64,
+          "n_allcorrect": 981,
+          "rev_allwrong": 0.828125,
+          "rev_allcorrect": 0.07747196738022426,
+          "rr": 10.689350328947368,
+          "rr_ci95_katz": [
+            8.382656513526783,
+            13.63078759944255
+          ]
+        },
+        "2": {
+          "K": 5,
+          "n_allwrong": 70,
+          "n_allcorrect": 975,
+          "rev_allwrong": 0.7857142857142857,
+          "rev_allcorrect": 0.06974358974358974,
+          "rr": 11.265756302521009,
+          "rr_ci95_katz": [
+            8.687794613743288,
+            14.608686175317779
+          ]
+        },
+        "3": {
+          "K": 5,
+          "n_allwrong": 69,
+          "n_allcorrect": 953,
+          "rev_allwrong": 0.7101449275362319,
+          "rev_allcorrect": 0.07450157397691501,
+          "rr": 9.531945294958154,
+          "rr_ci95_katz": [
+            7.277831301617377,
+            12.484210933260188
+          ]
+        },
+        "4": {
+          "K": 5,
+          "n_allwrong": 62,
+          "n_allcorrect": 955,
+          "rev_allwrong": 0.7580645161290323,
+          "rev_allcorrect": 0.07225130890052356,
+          "rr": 10.492052360916317,
+          "rr_ci95_katz": [
+            8.031397778445218,
+            13.706600741361912
+          ]
+        }
+      },
+      "rr_per_seed_K5_summary": {
+        "mean": 10.935398322257303,
+        "min": 9.531945294958154,
+        "max": 12.697887323943661
+      },
+      "seed42_replication": {
+        "all_posts_as_submitted": {
+          "K": 5,
+          "n_allwrong": 75,
+          "n_allcorrect": 972,
+          "rev_allwrong": 0.76,
+          "rev_allcorrect": 0.06172839506172839,
+          "rr": 12.312000000000001,
+          "rr_ci95_katz": [
+            9.34126017646672,
+            16.227504762353846
+          ]
+        },
+        "labelled_posts": {
+          "K": 5,
+          "n_allwrong": 71,
+          "n_allcorrect": 949,
+          "rev_allwrong": 0.8028169014084507,
+          "rev_allcorrect": 0.06322444678609063,
+          "rr": 12.697887323943661,
+          "rr_ci95_katz": [
+            9.686710391522231,
+            16.645108192011445
+          ]
+        }
+      },
+      "ensemble_accuracy": {
+        "revised": 0.6113074204946997,
+        "unrevised_labelled": 0.9546742209631728,
+        "first_pass_missing": 0.875,
+        "all": 0.88205499276411
+      },
+      "auroc_revision": {
+        "ambiguity_1_minus_p_final": {
+          "auroc": 0.8877866645311765,
+          "ci95": [
+            0.8674946767472801,
+            0.9065747532021431
+          ]
+        },
+        "ensemble_entropy": {
+          "auroc": 0.839811542991755,
+          "ci95": [
+            0.8164701814326271,
+            0.8635421076800621
+          ],
+          "diff_ambiguity_1_minus_p_final_minus_this": {
+            "diff": 0.04797512153942152,
+            "ci95": [
+              0.030136248947952738,
+              0.0668864683434996
+            ]
+          }
+        },
+        "share_wrong_k_over_K": {
+          "auroc": 0.8696383347180653,
+          "ci95": [
+            0.8456489516200347,
+            0.8920912969382828
+          ],
+          "diff_ambiguity_1_minus_p_final_minus_this": {
+            "diff": 0.018148329813111208,
+            "ci95": [
+              0.00871120847036389,
+              0.028647045048678904
+            ]
+          }
+        },
+        "n_items": 1342,
+        "n_revised": 283,
+        "note": "CIs resample posts and condition on the trained ensemble; the ambiguity score uses the adjudicated label"
+      },
+      "confident_learning": {
+        "thresholds": [
+          0.8171870972272332,
+          0.8137234189921476
+        ],
+        "n_flagged": 53,
+        "flag_rate": 0.03835021707670044,
+        "n_flagged_labelled": 50,
+        "revised_rate_flagged": 0.84,
+        "revised_rate_unflagged": 0.18653250773993807,
+        "precision_for_revised": 0.84,
+        "recall_of_revised": 0.14840989399293286,
+        "estimated_label_issue_rate": 0.050916927870338205,
+        "note": "the issue rate estimates residual noise in the final labels, not the revision rate"
+      },
+      "side_taking_revised": {
+        "n_revised": 283,
+        "agrees_with_first_pass": 0.38869257950530034,
+        "per_seed_first_pass": [
+          0.4204946996466431,
+          0.3710247349823322,
+          0.37809187279151946,
+          0.3710247349823322,
+          0.38515901060070673
+        ]
+      }
+    }
+  }
+}

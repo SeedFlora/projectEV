@@ -1,0 +1,2 @@
+# Preserve the exact released experiment/artifact bytes used by MANIFEST.sha256.
+* -text
